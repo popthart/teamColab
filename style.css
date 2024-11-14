@@ -1,0 +1,65 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: #34769d; /*E949DB*/
+    color: white;
+    padding: 20px 50px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: #b4dbdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder{
+    color: #373737;
+}
+
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid rgb(7, 175, 175);
+    cursor: pointer;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.siteTitle {
+    flex: 1; 
+    margin: 0;
+}
+
+.menuContainer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.menu {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*temporary font*/
+    font-weight: 10;
+    display: flex;
+    gap: 25px;
+}
+
