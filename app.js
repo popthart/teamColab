@@ -32,7 +32,7 @@ alternatively, link to a json--if you're okay with the added complexity
   [
 		{
 			code: "White",
-			img: "1.png",
+			img: "./img/1.png",
 		},
 	],
 }
@@ -44,7 +44,7 @@ alternatively, link to a json--if you're okay with the added complexity
   [
 		{
 			code: "White",
-			img: "2.png",
+			img: "./img/2.png",
 		},
 	],
 }
@@ -56,7 +56,7 @@ alternatively, link to a json--if you're okay with the added complexity
   [
 		{
 			code: "black",
-			img: "3.png",
+			img: "./img/3.png",
 		},
 	],
 }
@@ -68,7 +68,7 @@ alternatively, link to a json--if you're okay with the added complexity
   [
 		{
 			code: "Multicolor",
-			img: "5.png",
+			img: "./img/5.png",
 		},
 	],
 }
@@ -80,7 +80,7 @@ alternatively, link to a json--if you're okay with the added complexity
   [
 		{
 			code: "white",
-			img: "airpods.png",
+			img: "./img/airpods.png",
 		},
 	],
 }
@@ -92,7 +92,7 @@ alternatively, link to a json--if you're okay with the added complexity
   [
 		{
 			code: "White",
-			img: "controller-headset.png",
+			img: "./img/controller-headset.png",
 		},
 	],
 }
@@ -104,7 +104,7 @@ alternatively, link to a json--if you're okay with the added complexity
   [
 		{
 			code: "blue",
-			img: "headphones.webp",
+			img: "./img/headphones.webp",
 		},
 	],
 }
@@ -116,7 +116,7 @@ alternatively, link to a json--if you're okay with the added complexity
   [
 		{
 			code: "white",
-			img: "ipad.webp",
+			img: "./img/ipad.webp",
 		},
 	],
 }
@@ -128,7 +128,7 @@ alternatively, link to a json--if you're okay with the added complexity
   [
 		{
 			code: "silver",
-			img: "pcfan.png",
+			img: "./img/pcfan.png",
 		},
 	],
 }*/
