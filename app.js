@@ -23,6 +23,117 @@ and so on
 alternatively, link to a json--if you're okay with the added complexity
 */
 
+//Temporary holding until array is estabilished with names, prices, and image files.
+/*{
+	id: 1,
+	title: "IPhone 15 Pro Max - 256GB",
+	price: 1099.99,
+	colors: 
+  [
+		{
+			code: "White",
+			img: "1.png",
+		},
+	],
+}
+{
+	id: 2,
+	title: "16-inch MacBook Pro - White",
+	price: 3999.00,
+	colors: 
+  [
+		{
+			code: "White",
+			img: "2.png",
+		},
+	],
+}
+{
+	id: 3,
+	title: "Canon EOS R100Canon - EOS R100 4K Video Mirrorless Camera with RF-S18-45mm f/4.5-6.3 IS STM Lens - Black",
+	price: 499.99,
+	colors: 
+  [
+		{
+			code: "black",
+			img: "3.png",
+		},
+	],
+}
+{
+	id: 4,
+	title: "65.6ft RGBIC LED Strip Lights, Color Changing LED Strips, App Control via Bluetooth, Smart Segmented Control, Multiple Scenes, Enhanced Music Sync LED Lights",
+	price: 64.99,
+	colors: 
+  [
+		{
+			code: "Multicolor",
+			img: "5.png",
+		},
+	],
+}
+{
+	id: 5,
+	title: "Apple AirPods (3rd Generation)",
+	price: 169.00,
+	colors: 
+  [
+		{
+			code: "white",
+			img: "airpods.png",
+		},
+	],
+}
+{
+	id: 6,
+	title: "Astro A10 Gen 2 Gaming Headset",
+	price: 59.99,
+	colors: 
+  [
+		{
+			code: "White",
+			img: "controller-headset.png",
+		},
+	],
+}
+{
+	id: 7,
+	title: "onn. Wireless Bluetooth on-Ear Headphones - Blue"
+	price: 14.99,
+	colors: 
+  [
+		{
+			code: "blue",
+			img: "headphones.webp",
+		},
+	],
+}
+{
+	id: 8,
+	title: "Apple iPad 10.9-inch Wi-Fi (2022, 10th generation)",
+	price: 499.99,
+	colors: 
+  [
+		{
+			code: "white",
+			img: "ipad.webp",
+		},
+	],
+}
+{
+	id: 9,
+	title: "GIGABYTE Radeon RX 7600 XT Gaming OC 16G Graphics Card, 3X WINDFORCE Fans 16GB 128-bit GDDR6, GV-R76XTGAMING OC-16GD Video Card",
+	price: 329.99,
+	colors: 
+  [
+		{
+			code: "silver",
+			img: "pcfan.png",
+		},
+	],
+}*/
+
+
 let chosenProduct = products[0]
 
 // selecting elements to be shown at bottom of screen
