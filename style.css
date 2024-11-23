@@ -33,6 +33,11 @@ nav{
     color: #373737;
 }
 
+.searchIcon{
+    position: relative;
+    left: 8px;
+}
+
 .limitedOffer{
     font-size: 20px;
     border-bottom: 2px solid rgb(7, 175, 175);
