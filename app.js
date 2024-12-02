@@ -27,25 +27,27 @@ alternatively, link to a json--if you're okay with the added complexity
 const products = [
 	{
 		id: 1,
-		title: "IPhone 15 Pro Max - 256GB",
-		price: 1099.99,
+		title: "GIGABYTE Radeon RX 7600 XT Gaming OC 16G Graphics Card, 3X WINDFORCE Fans 16GB 128-bit GDDR6, GV-R76XTGAMING OC-16GD Video Card",
+		price: 329.99,
+		desc: "Description text goes here.",
 		colors: 
 	[
 			{
-				code: "White",
-				img: "./img/1.png",
+				code: "silver",
+				img: "./img/pcfan.png",
 			},
 		],
 	},
 	{
 		id: 2,
-		title: "16-inch MacBook Pro - White",
-		price: 3999.00,
+		title: "onn. Wireless Bluetooth on-Ear Headphones - Blue",
+		price: 14.99,
+		desc: "",
 		colors: 
 	[
 			{
-				code: "White",
-				img: "./img/2.png",
+				code: "blue",
+				img: "./img/headphones.webp",
 			},
 		],
 	},
@@ -53,6 +55,7 @@ const products = [
 		id: 3,
 		title: "Canon EOS R100Canon - EOS R100 4K Video Mirrorless Camera with RF-S18-45mm f/4.5-6.3 IS STM Lens - Black",
 		price: 499.99,
+		desc: "",
 		colors: 
 	[
 			{
@@ -65,6 +68,7 @@ const products = [
 		id: 4,
 		title: "65.6ft RGBIC LED Strip Lights, Color Changing LED Strips, App Control via Bluetooth, Smart Segmented Control, Multiple Scenes, Enhanced Music Sync LED Lights",
 		price: 64.99,
+		desc: "",
 		colors: 
 	[
 			{
@@ -75,64 +79,67 @@ const products = [
 	},
 	{
 		id: 5,
-		title: "Apple AirPods (3rd Generation)",
-		price: 169.00,
-		colors: 
-	[
-			{
-				code: "white",
-				img: "./img/airpods.png",
-			},
-		],
-	},
-	{
-		id: 6,
-		title: "Astro A10 Gen 2 Gaming Headset",
-		price: 59.99,
+		title: "IPhone 15 Pro Max - 256GB",
+		price: 1099.99,
+		desc: "",
 		colors: 
 	[
 			{
 				code: "White",
-				img: "./img/controller-headset.png",
+				img: "./img/1.png",
 			},
 		],
 	},
-	{
-		id: 7,
-		title: "onn. Wireless Bluetooth on-Ear Headphones - Blue",
-		price: 14.99,
-		colors: 
-	[
-			{
-				code: "blue",
-				img: "./img/headphones.webp",
-			},
-		],
-	},
-	{
-		id: 8,
-		title: "Apple iPad 10.9-inch Wi-Fi (2022, 10th generation)",
-		price: 499.99,
-		colors: 
-	[
-			{
-				code: "white",
-				img: "./img/ipad.webp",
-			},
-		],
-	},
-	{
-		id: 9,
-		title: "GIGABYTE Radeon RX 7600 XT Gaming OC 16G Graphics Card, 3X WINDFORCE Fans 16GB 128-bit GDDR6, GV-R76XTGAMING OC-16GD Video Card",
-		price: 329.99,
-		colors: 
-	[
-			{
-				code: "silver",
-				img: "./img/pcfan.png",
-			},
-		],
-	},
+	// Products commented out to keep slider aligned
+	// {
+	// 	id: 2,
+	// 	title: "16-inch MacBook Pro - White",
+	// 	price: 3999.00,
+	// 	colors: 
+	// [
+	// 		{
+	// 			code: "White",
+	// 			img: "./img/2.png",
+	// 		},
+	// 	],
+	// },
+	// {
+	// 	id: 5,
+	// 	title: "Apple AirPods (3rd Generation)",
+	// 	price: 169.00,
+	// 	colors: 
+	// [
+	// 		{
+	// 			code: "white",
+	// 			img: "./img/airpods.png",
+	// 		},
+	// 	],
+	// },
+	// {
+	// 	id: 6,
+	// 	title: "Astro A10 Gen 2 Gaming Headset",
+	// 	price: 59.99,
+	// 	colors: 
+	// [
+	// 		{
+	// 			code: "White",
+	// 			img: "./img/controller-headset.png",
+	// 		},
+	// 	],
+	// },
+	
+	// {
+	// 	id: 8,
+	// 	title: "Apple iPad 10.9-inch Wi-Fi (2022, 10th generation)",
+	// 	price: 499.99,
+	// 	colors: 
+	// [
+	// 		{
+	// 			code: "white",
+	// 			img: "./img/ipad.webp",
+	// 		},
+	// 	],
+	// },
 ];
 
 
@@ -142,6 +149,7 @@ let chosenProduct = products[0]
 const currentProductImg = document.querySelector(".productImg");
 const currentProductTitle = document.querySelector(".productTitle");
 const currentProductPrice = document.querySelector(".productPrice");
+const currentProductDesc = document.querySelector(".productDesc");
 const currentProductColors = document.querySelectorAll(".color");
 const currentProductSizes = document.querySelectorAll(".size");
 
@@ -157,6 +165,7 @@ menuItems.forEach((item, index) => { // loop through menu items
 		// change the text for currentProduct (bottom of screen)
 		currentProductTitle.textContent = chosenProduct.title;
 		currentProductPrice.textContent = "$" + chosenProduct.price;
+		currentProductDesc.textContent = chosenProduct.desc;
 		// may comment or remove color swapper if we don't use it
 		currentProductImg.src = chosenProduct.colors[0].img;
 
