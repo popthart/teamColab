@@ -2,10 +2,11 @@ body{
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
+    background: #1b0a3e;
 }
 
 nav{
-    background-color: #34769d; /*E949DB*/
+    background-color: #01090d; /*E949DB*/
     color: white;
     padding: 20px 50px;
 }
@@ -19,7 +20,7 @@ nav{
 .search{
     display: flex;
     align-items: center;
-    background-color: #b4dbdf;
+    background-color: #fafafa;
     padding: 10px 20px;
     border-radius: 10px;
 }
@@ -40,7 +41,7 @@ nav{
 
 .limitedOffer{
     font-size: 20px;
-    border-bottom: 2px solid rgb(7, 175, 175);
+    border-bottom: 2px solid rgb(7, 49, 49);
     cursor: pointer;
 }
 
@@ -71,7 +72,7 @@ nav{
 .menuItem:hover {
     /* background-color: #9ec5fe; */
     /* text-decoration: underline; */
-    color: #0062F5;
+    color: #5521c6;
     cursor: pointer;
   }
 
@@ -119,7 +120,9 @@ img {
 
 /* Slider magic */
 .slider {
-background: #9ec5fe;
+background-image: url(img/background1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 overflow: hidden;
 }
@@ -151,13 +154,14 @@ z-index: 1;
 
 .sliderTitle {
 position: absolute;
-top: 10%;
+top: 8%;
 right: 10%;
-font-size: 60px;
+font-size: 50px;
 font-weight: 900;
 text-align: center;
-color: #0062F5;
+color: #5521c6;
 z-index: 1;
+text-shadow: rgb(255, 255, 255) 1px 0 10px;
 }
 
 .sliderPrice {
@@ -168,7 +172,7 @@ font-size: 60px;
 font-weight: 300;
 text-align: center;
 color: white;
-border: 1px solid gray;
+border: 2px solid gray;
 z-index: 1;
 }
 /* End slider magic */
@@ -176,7 +180,7 @@ z-index: 1;
 /* Buy button (top, slider) */
 .buyButton {
     position: absolute;
-    top: 50%;
+    top: 20%;
     right: 10%;
     font-size: 30px;
     font-weight: 900;
@@ -185,10 +189,17 @@ z-index: 1;
     background-color: black;
     z-index: 1;
     cursor: pointer;
+    transition: all 0.5s;
   }
   
   .buyButton:hover {
     background-color: white;
     color: black;
   }
+
+  .productDetails{
+    color: rgba(255, 255, 255, 0.57);
+    left: 25%;
+  }
+
   /* End buy button */

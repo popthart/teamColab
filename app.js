@@ -40,7 +40,7 @@ const products = [
 	},
 	{
 		id: 2,
-		title: "onn. Wireless Bluetooth on-Ear Headphones - Blue",
+		title: "Wireless Bluetooth on-Ear Headphones - Blue",
 		price: 14.99,
 		desc: "",
 		colors: 
