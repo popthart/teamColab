@@ -29,7 +29,7 @@ const products = [
 		id: 1,
 		title: "GIGABYTE Radeon RX 7600 XT Gaming OC 16G Graphics Card, 3X WINDFORCE Fans 16GB 128-bit GDDR6, GV-R76XTGAMING OC-16GD Video Card",
 		price: 329.99,
-		desc: "Description text goes here.",
+		desc: "Dive into next-level gaming with the GIGABYTE Radeon RX 7600 XT Gaming OC 16G. Engineered for performance and durability, this powerhouse graphics card features cutting-edge 16GB GDDR6 memory, a streamlined 128-bit interface, and the triple-fan WINDFORCE cooling system to keep things cool under pressure. Whether you're conquering virtual worlds, editing 4K content, or chasing esports glory, this card delivers immersive visuals, ultra-smooth gameplay, and unparalleled reliability. Elevate your experience — play bigger, faster, cooler.",
 		colors: 
 	[
 			{
@@ -42,7 +42,7 @@ const products = [
 		id: 2,
 		title: "Wireless Bluetooth on-Ear Headphones - Blue",
 		price: 14.99,
-		desc: "",
+		desc: "Experience sound without limits with these sleek and stylish Bluetooth on-ear headphones. With vibrant audio, a comfortable fit, and the freedom of wireless connectivity, they’re your perfect companion for music, calls, and everything in between. The bold blue finish adds a pop of personality, while the lightweight design ensures you can listen all day in style. Stay connected, stay inspired, and vibe to your rhythm!",
 		colors: 
 	[
 			{
@@ -55,7 +55,7 @@ const products = [
 		id: 3,
 		title: "Canon EOS R100Canon - EOS R100 4K Video Mirrorless Camera with RF-S18-45mm f/4.5-6.3 IS STM Lens - Black",
 		price: 499.99,
-		desc: "",
+		desc: "Capture your world in stunning 4K with the Canon EOS R100, a lightweight mirrorless marvel designed for creators on the go. Paired with the versatile RF-S18-45mm f/4.5-6.3 IS STM Lens, this camera delivers sharp photos, smooth video, and seamless creativity. Its compact design, intuitive controls, and advanced autofocus make it the perfect companion for vlogging, content creation, or preserving life’s best moments. Step up to professional-grade quality — effortlessly",
 		colors: 
 	[
 			{
@@ -68,7 +68,7 @@ const products = [
 		id: 4,
 		title: "65.6ft RGBIC LED Strip Lights, Color Changing LED Strips, App Control via Bluetooth, Smart Segmented Control, Multiple Scenes, Enhanced Music Sync LED Lights",
 		price: 64.99,
-		desc: "",
+		desc: "Transform any space with the vibrant magic of RGBIC LED Strip Lights. With 65.6 feet of dynamic, color-changing brilliance, these smart lights offer segmented control for endless customization. Easily set the mood via Bluetooth app control, explore multiple preset scenes, and watch the lights dance to your favorite music with enhanced sync technology. Perfect for parties, relaxing nights, or creative setups — your space, your vibe, your way!",
 		colors: 
 	[
 			{
@@ -81,7 +81,7 @@ const products = [
 		id: 5,
 		title: "IPhone 15 Pro Max - 256GB",
 		price: 1099.99,
-		desc: "",
+		desc: "Experience the pinnacle of innovation with the iPhone 15 Pro Max. Featuring a sleek titanium design, blazing-fast performance, and an impressive 256GB of storage, it’s built to handle your world effortlessly. Capture every detail with the advanced Pro camera system, enjoy immersive visuals on the Super Retina XDR display, and stay ahead with all-day battery life. This isn’t just a phone, iPhone is the ultimate tool for creativity, productivity, and connection.",
 		colors: 
 	[
 			{
