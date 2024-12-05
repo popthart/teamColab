@@ -5,8 +5,12 @@ body{
     background: #1b0a3e;
 }
 
+footer{
+    background-color: #c4c3c3;
+  }
+
 nav{
-    background-color: #01090d; /*E949DB*/
+    background-color: #0e1416; /*E949DB*/
     color: white;
     padding: 20px 50px;
 }
@@ -40,8 +44,9 @@ nav{
 }
 
 .limitedOffer{
+    color: #fafafa;
     font-size: 20px;
-    border-bottom: 2px solid rgb(7, 49, 49);
+    border-bottom: 2px solid rgb(27, 53, 75);
     cursor: pointer;
 }
 
@@ -52,6 +57,7 @@ nav{
 }
 
 .siteTitle {
+    color: #fafafa;
     flex: 1; 
     margin: 0;
 }
@@ -65,6 +71,7 @@ nav{
 .menu {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*temporary font*/
     font-weight: 10;
+    color: #fafafa;
     display: flex;
     gap: 25px;
 }
@@ -79,9 +86,9 @@ nav{
 .payment {
     width: 500px;
     height: 500px;
-    background-color: white;
+    background-color: #fafafa;
     position: absolute;
-    top: 0;
+    top: 1100px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -203,3 +210,37 @@ z-index: 1;
   }
 
   /* End buy button */
+
+  .features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  .feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .featureImg{
+    width: 50px;
+    height: 50px;
+  }
+
+  .featureTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+  }
+
+ .featureDescription{
+    width: 50%;
+    height: 100px;
+}
+
+@media screen and (max-width:480px){
+    
+}
