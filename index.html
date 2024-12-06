@@ -179,7 +179,7 @@
             <img src="./img/visa.png" width="40" alt="" class="cardIcon">
             <img src="./img/master.png" alt="" width="40" class="cardIcon">
         </div>
-        <input type="password" class="payInput" placeholder="Card Number">
+        <input type="password" class="payInput" placeholder="Card Number"> 
         <div class="cardInfo">
             <input type="text" placeholder="mm" class="payInput sm">
             <input type="text" placeholder="yyyy" class="payInput sm">
@@ -210,14 +210,30 @@
             <span class="featureDescription">"No questions asked" returns and easy 14 day refunds.</span>
         </div>
         <div class="feature">
-            <img src="./img/gift.png" alt="" class="featureImg">
-            <span class="featureTitle">GIFT CARDS</span>
+            <img src="./img/gift.png" alt="Gift Cards" style="cursor: pointer;" onclick="window.open('https://www.example.com/gift-cards', '_blank');" class="featureImg">
+            <span class="featureTitle" style="cursor: pointer;" onclick="window.open('https://www.example.com/gift-cards', '_blank');">GIFT CARDS</span>
             <span class="featureDescription">Perfect holiday gift for family and friends!</span>
         </div>
         <div class="feature">
-            <img src="./img/contact.png" alt="" class="featureImg">
-            <span class="featureTitle">CONTACT US</span>
+            <img src="./img/contact.png" alt="Contact Us" class="featureImg" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#contactModal">
+            <span style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#contactModal" class="featureTitle">CONTACT US</span>
             <span class="featureDescription">Find our email and customer support here!</span>
+        </div>
+    </div>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Email: support@techgrab.com</p>
+                    <p>Phone: +1 234-567-8910</p>
+                    <p>Address: 123 Example Lane, Los Angeles, CA</p>
+                </div>
+            </div>
         </div>
     </div>
 

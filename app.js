@@ -213,3 +213,12 @@ productButton.addEventListener("click", () => {
 close.addEventListener("click", () => {
 	payment.style.display = "none";
 });
+
+//js handling for the footer clickables 
+document.querySelector('.contactUs').addEventListener('click', () => {
+	new bootstrap.Modal(document.getElementById('contactModal')).show();
+});
+
+document.querySelector('.giftCards').addEventListener('click', () => {
+	window.open('https://www.example.com/gift-cards', '_blank');
+});
