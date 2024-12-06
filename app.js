@@ -220,5 +220,5 @@ document.querySelector('.contactUs').addEventListener('click', () => {
 });
 
 document.querySelector('.giftCards').addEventListener('click', () => {
-	window.open('https://www.example.com/gift-cards', '_blank');
+	window.open('giftcards.html', '_blank');
 });
