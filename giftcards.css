@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0;
+    background-color: #1b0a3e;
+    color: #fafafa
+}
+
+.gift-card {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+.gift-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.gift-card h3 {
+    margin: 10px;
+}
+.buy-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buy-button:hover {
+    background-color: #0056b3;
+}
