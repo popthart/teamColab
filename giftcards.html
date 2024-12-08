@@ -15,24 +15,53 @@
     </head>
 
     <body>
+        
+
         <h1>Buy Gift Cards Here!</h1>
         <div class="gift-cards">
             <img src=img/giftcard25.png alt="$25 Gift Card">
             <h3>$25 Gift Card</h3>
             <p>A great gift for friends or family</p>
-            <button class="buyButton">Buy Now</button><br><br><br>
+            <button class="productButton">To Checkout</button><br><br><br>
         </div>
         <div class="gift-cards">
             <img src=img/giftcard50.png alt="$50 Gift Card">
             <h3>$50 Gift Card</h3>
             <p>A great gift for a special someone</p>
-            <button class="buyButton">Buy Now</button><br><br><br>
+            <button class="productButton">To Checkout</button><br><br><br>
         </div>
         <div class="gift-cards">
             <img src=img/giftcard100.png alt="$100 Gift Card">
             <h3>$100 Gift Card</h3>
             <p>A great gift for the tech-obsessed!</p>
-            <button class="buyButton">Buy Now</button><br><br><br>
+            <button class="productButton">To Checkout</button><br><br><br>
         </div>
+
+        <div class="payment">
+            <h1 class="payTitle">Customer Details</h1>
+            <label>First and Last Name</label>
+            <input type="text" placeholder="Jane Doe" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+1 414 5756" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="231 Montgomery St, Montgomery, AL 36104" class="payInput">
+            <h1 class="payTitle">Card Details</h1>
+            <div class="cardIcons">
+                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+                <img src="./img/master.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number"> 
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout</button>
+            <span class="close">X</span>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous"></script> <!--This script is a part of Bootstrap library as well.-->
+        <script src="./Giftcards.js"></script> <!-- Joining app.js into the website -->
     </body>
 </html>
