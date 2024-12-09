@@ -1,11 +1,27 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 80px;
     padding: 0;
     background-color: #1b0a3e;
     color: #fafafa
 }
+
+header{
+    background-color: #0e1416;
+    padding: 30px;
+    margin-top: -75px;
+}
+
+.navItem{
+    position: absolute;
+}
+
+.siteName{
+    display: inline-block;
+    position:;
+}
+
 
 .gift-card {
     display: inline-block;
