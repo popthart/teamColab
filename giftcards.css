@@ -48,6 +48,10 @@ header{
     box-sizing: border-box;
 }
 
+.payTitle{
+    font-size: 25px;
+}
+
 .modal {
     position: fixed;
     top: 50%;
