@@ -1,14 +1,36 @@
-// selecting elements to use in modal box (for payment)
-const productButton = document.querySelector(".productButton");
-const payment = document.querySelector(".payment");
-const close = document.querySelector(".close");
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
 
-// open the payment modal when clicking "Buy Now"
-productButton.addEventListener("click", () => {
-	payment.style.display = "flex";
-});
+openModalButtons.forEach(button => {
+    button.addEventListener('click' , () => {
+        const modal= document.querySelector(button.dataset.modalTarget)
+        openModal(modal)
+    })
+})
 
-// close the payment modal when clicking "x"
-close.addEventListener("click", () => {
-	payment.style.display = "none";
-});
+closeModalButtons.forEach(button => {
+    button.addEventListener('click' , () => {
+        const modal= button.closest('.modal')
+        closeModal(modal)
+    })
+})
+
+function openModal(modal){
+    if (modal == null) return
+    modal.classList.add('active')
+    overlay.classList.add('active')
+}
+
+function closeModal(modal){
+    if (modal == null) return
+    modal.classList.remove('active')
+    overlay.classList.remove('active')
+}
+
+overlay.addEventListener('click', () => {
+    const modals = document.querySelectorAll('.modal.active')
+    modals.forEach(modal => {
+        closeModal(modal)
+    })
+})
