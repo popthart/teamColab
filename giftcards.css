@@ -59,6 +59,7 @@ header{
     background-color: white;
     width: 500px;
     max-width: 60%;
+    color:#0e1416;
 }
 
 .modal.active{
