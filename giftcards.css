@@ -37,7 +37,9 @@ header{
     width: 100%;
     height: auto;
     border-radius: 10px;
+    padding: 10px;
 }
+
 .gift-card h3 {
     margin: 10px;
 }
@@ -76,4 +78,12 @@ header{
     justify-content: center;
     cursor: pointer;
     padding: 2px;
+}
+
+.payTitle{
+    color: #0e1416;
+}
+
+label{
+    color:#0e1416;
 }
