@@ -12,13 +12,20 @@ footer{
 nav{
     background-color: #0e1416; /*E949DB*/
     color: white;
-    padding: 20px 50px;
+    padding: 40px 50px;
+    height: auto; 
 }
 
 .navTop{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-height: 100px; 
+}
+.navItem img {
+  width: 80%; /* Set the width as a percentage of its container */
+  max-width: 200px; /* Ensure the logo doesn't get too large */
+  height: auto; /* Maintain the aspect ratio */
 }
 
 .searchBarContainer {
