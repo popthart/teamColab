@@ -54,7 +54,7 @@
                 <input type="text" placeholder="Jane" class="payInput" id="firstName">
                 <input type="text" placeholder="Doe"  class="payInput" id="lastName">
                 <label>Phone Number</label><br>
-                <input type="text" placeholder="+1 (224) 414-5756" class="payInput"><br>
+                <input type="text" placeholder="+1 (224) 414-5756" class="payInput" style="width: 135px;" minlength="9" required maxlength="16" required><br>
                 <label>Address</label><br>
                 <input type="text" placeholder="231 Montgomery St, Montgomery, AL 36104" class="payInput" style="width: 300px"><br>
                 <h1 class="payTitle">Card Details</h1>
@@ -63,13 +63,13 @@
                     <img src="./img/master.png" alt="" width="40" class="cardIcon">
                 </div>
                 <label for="card#" id="cardNumber">Card Number</label>
-                <input type="password" class="payInput" placeholder="Card Number" id="card#">
+                <input type="password" class="payInput" placeholder="Card Number" id="card#" minlength="16" required maxlength="16" required>
                 <div class="cardInfo">
                     <label id="expirationDate">Expiration Date</label>
-                    <input type="text" placeholder="mm" class="payInput sm" style="width: 30px">
-                    <input type="text" placeholder="yyyy" class="payInput sm" style="width: 37px;"><br>
+                    <input type="text" placeholder="mm" class="payInput sm" style="width: 30px" minlength="2" required maxlength="2" required>
+                    <input type="text" placeholder="yyyy" class="payInput sm" style="width: 37px;" minlength="4" required maxlength="4" required><br>
                     <label id="CSV">CSV</label>
-                    <input type="text" placeholder="cvv" class="payInput sm" style="width: 30px;"><br>
+                    <input type="text" placeholder="cvv" class="payInput sm" style="width: 30px;" minlength="3" required maxlength="3" required><br>
                 </div>
                 <button class="payButton" id="Checkout">Checkout</button>
             </div>
