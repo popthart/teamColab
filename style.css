@@ -92,6 +92,10 @@ nav{
   padding: 0.15em;
 }
 
+#limitedModal .modal-content {
+    color: black;
+}
+
 .navBottom {
     display: flex;
     align-items: center;
