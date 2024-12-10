@@ -144,7 +144,7 @@ Modal css
 }
 
 #Checkout{
-    margin-top: 9%;
+    margin-top: 2%;
 }
 
 #cardNumber{
@@ -157,4 +157,8 @@ Modal css
 
 #CSV{
     margin-left: -170px;
+}
+
+#LPCode{
+    margin-left: -183px;
 }

@@ -163,6 +163,10 @@ img {
   margin-top: 9%;
 }
 
+#LPCode{
+  margin-left: -183px;
+}
+
 /* Slider magic */
 .slider {
 background-image: url(img/background1.jpg);
