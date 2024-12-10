@@ -50,24 +50,28 @@
                 <button data-close-button class="close-button">&times;</button>
             </div>
             <div class="modal-body">
-                <label>First and Last Name</label>
-                <input type="text" placeholder="Jane Doe" class="payInput"><br>
-                <label>Phone Number</label>
-                <input type="text" placeholder="+1 414 5756" class="payInput"><br>
-                <label>Address</label>
-                <input type="text" placeholder="231 Montgomery St, Montgomery, AL 36104" class="payInput"><br>
+                <label id="fName">First Name</label><label id="lName">Last Name</label><br>
+                <input type="text" placeholder="Jane" class="payInput" id="firstName">
+                <input type="text" placeholder="Doe"  class="payInput" id="lastName">
+                <label>Phone Number</label><br>
+                <input type="text" placeholder="+1 (224) 414-5756" class="payInput"><br>
+                <label>Address</label><br>
+                <input type="text" placeholder="231 Montgomery St, Montgomery, AL 36104" class="payInput" style="width: 300px"><br>
                 <h1 class="payTitle">Card Details</h1>
                 <div class="cardIcons">
                     <img src="./img/visa.png" width="40" alt="" class="cardIcon">
                     <img src="./img/master.png" alt="" width="40" class="cardIcon">
                 </div>
-                <input type="password" class="payInput" placeholder="Card Number">
+                <label for="card#" id="cardNumber">Card Number</label>
+                <input type="password" class="payInput" placeholder="Card Number" id="card#">
                 <div class="cardInfo">
-                    <input type="text" placeholder="mm" class="payInput sm"><br>
-                    <input type="text" placeholder="yyyy" class="payInput sm"><br>
-                    <input type="text" placeholder="cvv" class="payInput sm"><br>
+                    <label id="expirationDate">Expiration Date</label>
+                    <input type="text" placeholder="mm" class="payInput sm" style="width: 30px">
+                    <input type="text" placeholder="yyyy" class="payInput sm" style="width: 35px;"><br>
+                    <label id="CSV">CSV</label>
+                    <input type="text" placeholder="cvv" class="payInput sm" style="width: 30px;"><br>
                 </div>
-                <button class="payButton">Checkout</button>
+                <button class="payButton" id="Checkout">Checkout</button>
             </div>
         </div>
         <div id="overlay"></div>
