@@ -55,7 +55,7 @@
                     <input type="text" required placeholder="Jane" class="payInput" id="firstName">
                     <input type="text" required placeholder="Doe"  class="payInput" id="lastName">
                     <label>Phone Number</label><br>
-                    <input type="text" required placeholder="+1 (224) 414-5756" class="PhoneNumber" style="width: 135px;" minlength="9" required maxlength="16"><br>
+                    <input type="text" required placeholder="+1 (224) 414-5756" pattern="^[0-9]*$" minlength="9" required maxlength="10" class="PhoneNumber" style="width: 135px;"><br>
                     <label>Address</label><br>
                     <input type="text" required placeholder="231 Montgomery St, Montgomery, AL 36104" class="payInput" style="width: 300px"><br>
                     <h1 class="payTitle">Card Details</h1>
@@ -64,13 +64,13 @@
                     <img src="./img/master.png" alt="" width="40" class="cardIcon">
                     </div>
                     <label for="card#" id="cardNumber">Card Number</label>
-                    <input type="password" required class="payInput" placeholder="Card Number" id="card#" minlength="16" required maxlength="16">
+                    <input type="password" required pattern="^[0-9]*$" class="payInput" placeholder="Card Number" id="card#" minlength="16" required maxlength="16">
                     <div class="cardInfo">
                     <label id="expirationDate">Expiration Date</label>
-                    <input type="text" required placeholder="mm" class="Month" style="width: 30px" minlength="2" required maxlength="2">
-                    <input type="text" required placeholder="yyyy" class="Year" style="width: 37px;" minlength="4" required maxlength="4"><br>
+                    <input type="text" required pattern="^[0-9]*$" placeholder="mm" class="Month" style="width: 30px" minlength="2" required maxlength="2">
+                    <input type="text" required pattern="^[0-9]*$" placeholder="yyyy" class="Year" style="width: 37px;" minlength="4" required maxlength="4"><br>
                     <label id="CSV">CSV</label>
-                    <input type="text" required placeholder="cvv" class="csv" style="width: 30px;" minlength="3" required maxlength="3"><br>
+                    <input type="text" required pattern="^[0-9]*$" placeholder="cvv" class="csv" style="width: 30px;" minlength="3" required maxlength="3"><br>
                     </div>
                     <input type="submit" class="payButton" id="Checkout" value="Checkout" />
                 </form>
