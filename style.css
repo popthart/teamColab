@@ -92,7 +92,11 @@ nav{
   padding: 0.15em;
 }
 
-#limitedModal.modal-body {
+.modal-header {
+    color: black;
+}
+
+.modal-body {
     color: black;
 }
 
