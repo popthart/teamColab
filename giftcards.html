@@ -50,28 +50,30 @@
                 <button data-close-button class="close-button">&times;</button>
             </div>
             <div class="modal-body">
-                <label id="fName">First Name</label><label id="lName">Last Name</label><br>
-                <input type="text" placeholder="Jane" class="payInput" id="firstName">
-                <input type="text" placeholder="Doe"  class="payInput" id="lastName">
-                <label>Phone Number</label><br>
-                <input type="text" placeholder="+1 (224) 414-5756" class="payInput" style="width: 135px;" minlength="9" required maxlength="16" required><br>
-                <label>Address</label><br>
-                <input type="text" placeholder="231 Montgomery St, Montgomery, AL 36104" class="payInput" style="width: 300px"><br>
-                <h1 class="payTitle">Card Details</h1>
-                <div class="cardIcons">
+                <form>
+                    <label id="fName">First Name</label><label id="lName">Last Name</label><br>
+                    <input type="text" required placeholder="Jane" class="payInput" id="firstName">
+                    <input type="text" required placeholder="Doe"  class="payInput" id="lastName">
+                    <label>Phone Number</label><br>
+                    <input type="text" required placeholder="+1 (224) 414-5756" class="PhoneNumber" style="width: 135px;" minlength="9" required maxlength="16"><br>
+                    <label>Address</label><br>
+                    <input type="text" required placeholder="231 Montgomery St, Montgomery, AL 36104" class="payInput" style="width: 300px"><br>
+                    <h1 class="payTitle">Card Details</h1>
+                    <div class="cardIcons">
                     <img src="./img/visa.png" width="40" alt="" class="cardIcon">
                     <img src="./img/master.png" alt="" width="40" class="cardIcon">
-                </div>
-                <label for="card#" id="cardNumber">Card Number</label>
-                <input type="password" class="payInput" placeholder="Card Number" id="card#" minlength="16" required maxlength="16" required>
-                <div class="cardInfo">
+                    </div>
+                    <label for="card#" id="cardNumber">Card Number</label>
+                    <input type="password" required class="payInput" placeholder="Card Number" id="card#" minlength="16" required maxlength="16">
+                    <div class="cardInfo">
                     <label id="expirationDate">Expiration Date</label>
-                    <input type="text" placeholder="mm" class="payInput sm" style="width: 30px" minlength="2" required maxlength="2" required>
-                    <input type="text" placeholder="yyyy" class="payInput sm" style="width: 37px;" minlength="4" required maxlength="4" required><br>
+                    <input type="text" required placeholder="mm" class="Month" style="width: 30px" minlength="2" required maxlength="2">
+                    <input type="text" required placeholder="yyyy" class="Year" style="width: 37px;" minlength="4" required maxlength="4"><br>
                     <label id="CSV">CSV</label>
-                    <input type="text" placeholder="cvv" class="payInput sm" style="width: 30px;" minlength="3" required maxlength="3" required><br>
-                </div>
-                <button class="payButton" id="Checkout">Checkout</button>
+                    <input type="text" required placeholder="cvv" class="csv" style="width: 30px;" minlength="3" required maxlength="3"><br>
+                    </div>
+                    <input type="submit" class="payButton" id="Checkout" value="Checkout" />
+                </form>
             </div>
         </div>
         <div id="overlay"></div>
