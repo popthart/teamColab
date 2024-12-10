@@ -214,6 +214,11 @@ close.addEventListener("click", () => {
 	payment.style.display = "none";
 });
 
+//js handling for the limited-time offer clickable 
+document.querySelector('.limitedTime').addEventListener('click', () => {
+	new bootstrap.Modal(document.getElementById('limitedModal')).show();
+});
+
 //js handling for the footer clickables 
 document.querySelector('.contactUs').addEventListener('click', () => {
 	new bootstrap.Modal(document.getElementById('contactModal')).show();
