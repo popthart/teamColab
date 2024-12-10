@@ -20,12 +20,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 100px; 
+    min-height: 80px; 
 }
 .navItem img {
-  width: 80%; /* Set the width as a percentage of its container */
-  max-width: 200px; /* Ensure the logo doesn't get too large */
-  height: auto; /* Maintain the aspect ratio */
+  width: clamp(100px, 10vw, 200px); 
+  max-width: 200px; 
+  height: auto; 
 }
 
 .searchBarContainer {
@@ -42,7 +42,6 @@ nav{
     padding: 0.5em 1em;
     border-radius: 10px;
     width: 50%;
-    /* max-width: 400px;  */
     min-width: 200px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     justify-content: space-between;
@@ -69,7 +68,7 @@ nav{
 
 .limitedOffer {
   color: #fafafa;
-  font-size: clamp(1rem, 2vw, 1.25rem); 
+  font-size: clamp(0.8rem, 2vw, 1.5rem); 
   border-bottom: 3px solid rgba(86, 4, 153, 0.616);
   cursor: pointer;
   text-align: center; 
@@ -96,26 +95,34 @@ nav{
     margin: 0;
 }
 
+
 .menuContainer {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); 
+  display: flex; 
+  justify-content: center; 
+  width: 100%;
 }
 
-.menu {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*temporary font*/
-    font-weight: 10;
-    color: #fafafa;
+
+  .menu {
     display: flex;
-    gap: 25px;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px
 }
+
+.menuItem {
+  font-size: 2vw; 
+  text-align: center; 
+  cursor: pointer;
+  transition: color 0.4s ease;
+  transition: all 0.3s ease-in-out;
+}
+
 
 .menuItem:hover {
-    /* background-color: #9ec5fe; */
-    /* text-decoration: underline; */
-    color: #5521c6;
-    cursor: pointer;
-  }
+    color: #5521c6; 
+    transform: scale(1.10); 
+}
 
 .payment {
     position: fixed;
