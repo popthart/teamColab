@@ -69,6 +69,14 @@ nav{
   padding: 0.15em;
 }
 
+.modal-header {
+    color: black;
+}
+
+.modal-body {
+    color: black;
+}
+
 .navBottom {
     display: flex;
     align-items: center;
