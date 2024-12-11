@@ -94,11 +94,11 @@ nav{
   display: inline-block;
   font-family: 'Sixtyfour Convergence', sans-serif;
   font-size: clamp(0.8rem, 2vw, 1.5rem); 
-  border-bottom: 3px solid rgba(86, 4, 153, 0.616);
+  border-bottom: 3px solid rgba(246, 92, 57, 0.742);
   cursor: pointer;
   text-align: center; 
   /* padding: 0.15em; */
-  animation: blink 2.5s infinite;
+  animation: blink 4.5s infinite;
 }
 
 @keyframes blink {
