@@ -429,7 +429,6 @@ img {
     height: 100px;
 }
 
-
 /* Styles for larger monitors */
 @media screen and (min-width: 1280px) {
   nav {

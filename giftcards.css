@@ -59,7 +59,7 @@ hr {
     border: 0; 
     border-top: 2px solid white; 
     margin: 10px auto; 
-    transform: translateY(-25px)
+    transform: translateY(-20px)
 }
 
 .gift-card {
@@ -79,9 +79,6 @@ hr {
     padding: 10px;
 }
 
-.gift-card h3 {
-    margin: 10px;
-}
 
 /*
 Modal css
@@ -215,5 +212,21 @@ Modal css
         width: 100%;
         top: 10px;
         
+    }
+
+    .gift-card img{
+        display: block;
+        margin: auto;
+        align-items: center;
+    }
+
+    .gift-cards{
+        transform: scale(0.75);
+        align-items: center;
+    }
+
+    body{
+        width:auto;
+        height: auto;
     }
 }
