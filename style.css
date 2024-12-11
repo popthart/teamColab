@@ -24,28 +24,39 @@ nav{
     padding: 0px 50px;
     padding-top: 40px;
     /* height: auto;  */
-    height: 213px;
+    /* position: relative; */
+    height: 200px;
   }
 
 .navTop{
+
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* min-height: 80px;  */
-    max-height: 213px;
+
+
+    top: 50% ;
+    
+    width: 100%;
 }
 
 .navItem img {
   width: clamp(100px, 10vw, 200px); 
-  max-width: 200px; 
+  max-width: 150px; 
   height: auto; 
 }
 
 .searchBarContainer {
+  flex: 1;
   display: flex;
   justify-content: center;
   padding: 1em 0;
   width: 50%; 
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .search{
@@ -82,12 +93,13 @@ nav{
 
 .limitedOffer {
   /* color: #fafafa; */
+  display: inline-block;
   font-family: 'Sixtyfour Convergence', sans-serif;
-  font-size: clamp(0.8rem, 2vw, 1.5rem); 
+  font-size: clamp(0.7rem, 1.8vw, 1.3rem);
   border-bottom: 3px solid rgba(86, 4, 153, 0.616);
   cursor: pointer;
   text-align: center; 
-  padding: 0.15em;
+  /* padding: 0.15em; */
   animation: blink 2.5s infinite;
 }
 
@@ -125,6 +137,9 @@ nav{
   display: flex; 
   justify-content: center; 
   width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
 
@@ -140,14 +155,13 @@ nav{
   font-size: 2vw; 
   text-align: center; 
   cursor: pointer;
-  transition: color 0.4s ease;
-  transition: all 0.3s ease-in-out;
+  transition: color 0.4s ease, transform 0.3s ease-in-out;
 }
 
 
 .menuItem:hover {
-  color: #5521c6; /* Highlight color on hover */
-  transform: scale(1.1); /* Slight zoom effect */
+  color: #5521c6; 
+  transform: scale(1.1); 
 }
 
 
@@ -329,8 +343,9 @@ img {
   .sliderImg {
   z-index: 1;
   max-width: 50%;
-  
   }
+
+
   
   .sliderTitle {
   position: absolute;
@@ -417,18 +432,47 @@ img {
     height: 100px;
 }
 
-/* @media screen and (max-width:480px){
 
-}
+/* Styles for larger monitors */
+@media screen and (min-width: 1280px) {
+  nav {
+      height: 200px; 
+  }
 
-@media screen and (max-width: 768px) {
-  .limitedOffer {
-      font-size: 1rem; 
+  .menuContainer {
+      width: 80%; 
+      max-width: 1400px; 
+  }
+
+  .menuItem {
+      font-size: 2rem; 
+      gap: 30px; 
+  }
+
+  .slider {
+      height: 40vw; 
+  }
+
+  .productDetails {
+      font-size: 1.2rem; 
+  }
+
+  footer {
+      padding: 30px 100px; 
   }
 }
 
-@media screen and (max-width: 480px) {
-  .limitedOffer {
-      font-size: 0.875rem; 
+/* Ultra-wide monitors */
+@media screen and (min-width: 1920px) {
+  .menuContainer {
+      max-width: 1600px; 
   }
-} */
+
+  .slider {
+      height: 35vw; 
+  }
+
+  .productDetails {
+      font-size: 1.4rem; 
+  }
+}
