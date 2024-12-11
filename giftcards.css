@@ -1,24 +1,57 @@
+
+
 body {
     font-family: Poppins, sans-serif;
     text-align: center;
-    margin-top: 80px;
+    margin: 0;
     padding: 0;
-    background-color: #1b0a3e;
+    background: #1b0a3e;
     color: #fafafa
 }
 
-header{
-    background-color: #0e1416;
-    padding: 30px;
-    margin-top: -75px;
+
+nav{
+    background-color: #0e1416; /*E949DB*/
+     color: white;
+     padding: 0px 20px;
+     height: auto;
+     margin: 0;
+     box-sizing: border-box;
+     width: 100%;
 }
 
+.navTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+
+.navItem{
+    flex: 0 1 auto;
+    text-align: left;
+}
+
+.navItem img {
+    width: clamp(100px, 10vw, 200px);
+    height: auto; 
+}
 
 .titlePage {
-    font-size: clamp(1.5rem, 5vw, 3rem); 
-    margin: 10px 0; 
-    text-align: center; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(1.5rem, 5vw, 3rem);  
     color: white; 
+    margin: 0;
+    padding: 0 10px;
+}
+
+.navTop .titlePage {
+    text-align: center;
 }
 
 hr {
@@ -26,23 +59,8 @@ hr {
     border: 0; 
     border-top: 2px solid white; 
     margin: 10px auto; 
+    transform: translateY(-20px)
 }
-
-.navItem{
-    position: absolute;
-}
-
-.siteName{
-    display: inline-block;
-    position:absolute;
-}
-
-.navItem img {
-    width: clamp(100px, 10vw, 200px); 
-    max-width: 200px; 
-    height: auto; 
-  }
-
 
 .gift-card {
     display: inline-block;
@@ -55,15 +73,12 @@ hr {
     text-align: center;
 }
 .gift-card img {
-    width: 100%;
+    width: clamp(150px, 15vw, 250px);
     height: auto;
     border-radius: 10px;
     padding: 10px;
 }
 
-.gift-card h3 {
-    margin: 10px;
-}
 
 /*
 Modal css
@@ -175,4 +190,43 @@ Modal css
 
 #LPCode{
     margin-left: -183px;
+}
+
+@media screen and (max-width: 768px){
+    .navTop{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .navItem{
+        position: relative;
+        transform: none;
+    }
+
+    .titlePage{
+        position: relative;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        top: 10px;
+        
+    }
+
+    .gift-card img{
+        display: block;
+        margin: auto;
+        align-items: center;
+    }
+
+    .gift-cards{
+        transform: scale(0.75);
+        align-items: center;
+    }
+
+    body{
+        width:auto;
+        height: auto;
+    }
 }
