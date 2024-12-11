@@ -47,7 +47,7 @@ const products = [
 	[
 			{
 				code: "blue",
-				img: "./img/headphones.webp",
+				img: "./img/headphones.png",
 			},
 		],
 	},
