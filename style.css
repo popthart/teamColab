@@ -517,13 +517,14 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    transform: translateY(30px);
   }
 
   .menuItem{
-    margin: 20px;
+    margin: 10px;
     font-weight: 200;
-    font-size: 20px;
-    transform: translateY(55px);
+    font-size: 25px;
+    transform: translateY(110px);
   }
 
   .menu{
@@ -546,10 +547,11 @@ img {
     overflow:auto;
     position: relative;
     padding: 20px;
-    width: 100%;
+    width: 80%;
     justify-content: center;
     align-items: center;
     height: auto;
+    width: auto;
   }
 
   .sliderTitle{

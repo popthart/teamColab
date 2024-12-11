@@ -218,7 +218,7 @@ Modal css
         transform: none;
     }
 
-    /* .titlePage{
+     .titlePage{
         position: relative;
         text-align: center;
         padding: 0;
@@ -226,7 +226,7 @@ Modal css
         width: 100%;
         top: 10px;
         
-    } */
+    } 
 
     .gift-card img{
         display: block;
@@ -237,6 +237,10 @@ Modal css
     .gift-cards{
         transform: scale(0.75);
         align-items: center;
+    }
+
+    hr{
+        transform: translateY(-40px);
     }
 
     body{
