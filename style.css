@@ -349,7 +349,7 @@ img {
   z-index: 1;
   max-width: 50%;
   height: auto;
-  transform: translateX(55px);
+  /* transform: translateX(55px); */
   }
 
   .sliderItem::before {
@@ -396,10 +396,10 @@ img {
 
 /* Buy button (top, slider) */
 .buyButton {
-    position: relative;
+    position: absolute;
     top: 20%;
-    right: 10%;
-    font-size: 30px;
+    right: 15%;
+    font-size: 40px;
     font-weight: 900;
     color: white;
     border: 1px solid gray;
