@@ -323,6 +323,7 @@ img {
   transition: all 1.5s ease-in-out;
   justify-content: center;
   position: relative;
+  transform: translateX(-55px);
   }
   
   .sliderItem {
