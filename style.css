@@ -25,8 +25,7 @@ nav{
     padding-top: 40px;
     /* height: auto;  */
     /* position: relative; */
-    height: 200px;
-    
+    height: 175px;
   }
 
 .navTop{
@@ -36,6 +35,8 @@ nav{
     /* min-height: 80px;  */
     top: 50% ;
     width: 100%;
+    position: relative;
+    top: -20px;
 }
 
 .navItem img {
@@ -136,6 +137,7 @@ nav{
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  top: 25%;
 }
 
 
@@ -453,7 +455,7 @@ img {
 /* Styles for larger monitors */
 @media screen and (min-width: 1280px) {
   nav {
-      height: 200px; 
+      height: 175px; 
   }
 
   .menuContainer {
