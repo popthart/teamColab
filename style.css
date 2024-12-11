@@ -50,7 +50,7 @@ nav{
   flex: 1;
   display: flex;
   justify-content: center;
-  padding: 1em 0;
+  /* padding: 1em 0; */
   width: 50%; 
   position: absolute;
   left: 50%;
