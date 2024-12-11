@@ -523,7 +523,7 @@ img {
   .menuItem{
     margin: 10px;
     font-weight: 200;
-    font-size: 25px;
+    font-size: 20px;
     transform: translateY(110px);
   }
 
@@ -572,7 +572,7 @@ img {
 
   .buyButton{
     font-size: 10px;
-    transform: translateY(-40px);
+    transform: translateY(0px);
   }
 
   .features{
