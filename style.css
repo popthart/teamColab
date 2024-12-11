@@ -136,8 +136,8 @@ nav{
   width: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  position: absolute;
-  top: 15%;
+  position:relative;
+  top: -35%;
 }
 
 
