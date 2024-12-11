@@ -13,9 +13,23 @@ header{
     margin-top: -75px;
 }
 
-.titlePage{
+/* .titlePage{
     font-weight: 300;
     font-size: 50px;
+} */
+
+.titlePage {
+    font-size: clamp(1.5rem, 5vw, 3rem); /* Responsive font size */
+    margin: 10px 0; /* Space above and below the title */
+    text-align: center; /* Center-align the text */
+    color: white; /* Text color */
+}
+
+hr {
+    width: 60%; /* Shortened width */
+    border: 0; /* Remove default styling */
+    border-top: 2px solid white; /* Custom border for line */
+    margin: 10px auto; /* Center horizontally with spacing */
 }
 
 
@@ -28,6 +42,12 @@ header{
     display: inline-block;
     position:absolute;
 }
+
+.navItem img {
+    width: clamp(100px, 10vw, 200px); 
+    max-width: 200px; 
+    height: auto; 
+  }
 
 
 .gift-card {

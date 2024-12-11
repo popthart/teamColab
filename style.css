@@ -9,19 +9,28 @@ footer{
     background-color: #c4c3c3;
   }
 
+  * {
+    box-sizing: border-box;
+}
+
 nav{
     background-color: #0e1416; /*E949DB*/
     color: white;
-    padding: 40px 50px;
-    height: auto; 
-}
+    /* padding: 40px 50px; */
+    padding: 0px 50px;
+    padding-top: 40px;
+    /* height: auto;  */
+    height: 213px;
+  }
 
 .navTop{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 80px; 
+    /* min-height: 80px;  */
+    max-height: 213px;
 }
+
 .navItem img {
   width: clamp(100px, 10vw, 200px); 
   max-width: 200px; 
@@ -52,6 +61,7 @@ nav{
     background-color: transparent;
     font-size: 1rem;
     padding: 0.3em;
+    width: 87%;
 }
 
 .searchInput::placeholder{
@@ -107,7 +117,7 @@ nav{
     display: flex;
     justify-content: center; 
     flex-wrap: wrap; 
-    gap: 20px
+    gap: 45px
 }
 
 .menuItem {
@@ -116,6 +126,12 @@ nav{
   cursor: pointer;
   transition: color 0.4s ease;
   transition: all 0.3s ease-in-out;
+}
+
+
+.menuItem:hover {
+  color: #5521c6; /* Highlight color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
 }
 
 
