@@ -11,13 +11,22 @@ body {
 
 
 nav{
-    background-color: #0e1416; /*E949DB*/
+    /* background-color: #0e1416; /*E949DB
      color: white;
      padding: 0px 20px;
      height: auto;
      margin: 0;
      box-sizing: border-box;
-     width: 100%;
+     width: 100%; */
+
+     background-color: #0e1416; /*E949DB*/
+     color: white;
+     /* padding: 40px 50px; */
+     padding: 0px 50px;
+     padding-top: 40px;
+     /* height: auto;  */
+     /* position: relative; */
+     height: 175px;
 }
 
 .navTop{
@@ -28,6 +37,7 @@ nav{
     width: 100%;
     padding: 15px 0;
     box-sizing: border-box;
+    top: -35px
 }
 
 .navItem{
@@ -36,7 +46,10 @@ nav{
 }
 
 .navItem img {
-    width: clamp(100px, 10vw, 200px);
+    /* width: clamp(100px, 10vw, 200px);
+    height: auto;  */
+    width: clamp(100px, 10vw, 200px); 
+    max-width: 150px; 
     height: auto; 
 }
 
@@ -44,10 +57,11 @@ nav{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: clamp(1.5rem, 5vw, 3rem);  
+    font-size: clamp(1rem, 5vw, 3rem);  
     color: white; 
     margin: 0;
     padding: 0 10px;
+    white-space: nowrap; 
 }
 
 .navTop .titlePage {
@@ -55,11 +69,11 @@ nav{
 }
 
 hr {
-    width: 60%; 
+    width: 40%; 
     border: 0; 
     border-top: 2px solid white; 
     margin: 10px auto; 
-    transform: translateY(-20px)
+    transform: translateY(-75px)
 }
 
 .gift-card {
@@ -204,7 +218,7 @@ Modal css
         transform: none;
     }
 
-    .titlePage{
+    /* .titlePage{
         position: relative;
         text-align: center;
         padding: 0;
@@ -212,7 +226,7 @@ Modal css
         width: 100%;
         top: 10px;
         
-    }
+    } */
 
     .gift-card img{
         display: block;
