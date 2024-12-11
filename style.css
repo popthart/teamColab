@@ -83,8 +83,8 @@ nav{
 .limitedOffer {
   /* color: #fafafa; */
   font-family: 'Sixtyfour Convergence', sans-serif;
-  font-size: clamp(0.8rem, 2vw, 1.5rem); 
-  border-bottom: 3px solid rgba(86, 4, 153, 0.616);
+  font-size: clamp(0.8rem, 2vw, 1.25rem); 
+  border-bottom: 2px solid rgba(86, 4, 153, 0.616);
   cursor: pointer;
   text-align: center; 
   padding: 0.15em;
