@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
 
 
 body{
@@ -379,18 +380,46 @@ img {
   text-shadow: rgb(255, 255, 255) 1px 0 10px;
   }
   
+/* Floating price effect */
+
+@keyframes floatSway {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-10px, -15px); 
+  }
+  50% {
+    transform: translate(0, -20px);
+  }
+  75% {
+    transform: translate(10px, -15px); 
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+
   .sliderPrice {
   position: absolute;
   top: 65%;
   left: 5%;
-  font-size: 3.5vw; 
-  font-weight: bolder;
+  font-size: 4vw; 
+  /* font-weight: bolder; */
   text-align: center;
   color: white;
-  border: 8px groove gray;
+  /* border: 8px groove gray; */
   z-index: 1;
   padding: 2px;
+  font-family: 'Rubik Distressed', sans-serif;
+  animation: floatSway 3s ease-in-out infinite;
   }
+
+  .sliderPrice:hover {
+    animation: floatSway 1.5s ease-in-out infinite; 
+  }  
 
   /* End of slider magic */
 
