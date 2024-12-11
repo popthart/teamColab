@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+
 body{
     font-family: 'Poppins', sans-serif;
     padding: 0;
@@ -77,12 +81,23 @@ nav{
 
 
 .limitedOffer {
-  color: #fafafa;
+  /* color: #fafafa; */
+  font-family: 'Sixtyfour Convergence', sans-serif;
   font-size: clamp(0.8rem, 2vw, 1.5rem); 
   border-bottom: 3px solid rgba(86, 4, 153, 0.616);
   cursor: pointer;
   text-align: center; 
   padding: 0.15em;
+  animation: blink 2.5s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+      opacity: 1; 
+  }
+  25%, 75% {
+      opacity: 0; 
+  }
 }
 
 .modal-header {
@@ -121,6 +136,7 @@ nav{
 }
 
 .menuItem {
+  font-family: 'Jaro', sans-serif;
   font-size: 2vw; 
   text-align: center; 
   cursor: pointer;
