@@ -147,6 +147,10 @@ nav{
     transform: translate(-50%, -50%);
     width: 500px;
     height: 500px;
+    max-width: 60%;
+    max-height: 60%;
+    border: 1px solid black;
+    border-radius: 10px;
     background-color: #fafafa;
     margin: auto;
     padding: 10px 50px;
@@ -170,14 +174,108 @@ nav{
     padding: 2px;
 }
 
+.payTitle{
+  font-size: 1.25rem;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+
 img {
     max-width: 50%;
     height: auto;
-  }
+}
+
+#Details{
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-left: 29%;
+}
+
+#cardDetails{
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-left: 35%;
+}
+
+#fName{
+    margin-left: 10%;
+}
+
+#firstName{
+  margin-left: 5%;
+  font-size: 10pt;
+}
+
+#lastName{
+  font-size: 10pt;
+}
+
+#lName{
+    margin-left: 21%;
+}
+
+#phoneNumber{
+  margin-left: 35%;
+}
+
+#pNumber{
+  margin-left: 35%;
+  font-size: 10pt;
+}
+
+#addr{
+  margin-left: 40%;
+}
+
+#address{
+  margin-left: 5%;
+  font-size: 10pt;
+}
+
+#Visa{
+  margin-left: 39%;
+}
 
 #Checkout{
-  margin-top: 9%;
+  margin-left: 37%;
+  margin-top: 8%;
 }
+
+#cNumber{
+  font-size: 12px;
+}
+
+#expirationDate{
+  margin-left: -2.7%;
+}
+
+.Month{
+  font-size: 12px;
+}
+
+.Year{
+  font-size: 12px;
+}
+
+.csv{
+  font-size: 12px;
+}
+
+#CSV{
+  margin-left: 19.1%;
+}
+
+#LPCode{
+  margin-left: 3.2%;
+}
+
+#pCode{
+  font-size: 12px;
+}
+
 
 /* Slider magic */
 .slider {
