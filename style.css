@@ -319,6 +319,8 @@ img {
   display: flex;
   width: 500vw;
   transition: all 1.5s ease-in-out;
+  justify-content: center;
+  position: relative;
   }
   
   .sliderItem {
@@ -327,7 +329,10 @@ img {
   align-items: center;
   justify-content: center;
   position: relative;
+  transform: translateX(55px);
+
   }
+
   
   .sliderBg {
     width: 100vw; 
@@ -337,11 +342,27 @@ img {
   }
   
   .sliderImg {
+    position: relative;
   z-index: 1;
   max-width: 50%;
+  height: auto;
+  transform: translateX(55px);
   }
 
-
+  .sliderItem::before {
+    content: ""; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 35%; 
+    height: 50%; /* Proportional to the image */
+    background: rgba(96, 2, 96, 0.4); /* Purple color with transparency */
+    border-radius: 50%; /* Circular glow */
+    filter: blur(100px); /* Soft, diffused glow */
+    z-index: 0; /* Place behind the image */
+    pointer-events: none; /* Allow clicks to pass through */
+}
   
   .sliderTitle {
   position: absolute;
